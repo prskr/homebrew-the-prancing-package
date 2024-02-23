@@ -5,24 +5,24 @@
 class GitAge < Formula
   desc "git-age is a smudge/clean filter to encrypt/decrypt files in a git repository transparently"
   homepage "https://github.com/prskr/git-age"
-  version "0.1.9"
+  version "0.1.10"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/prskr/git-age/releases/download/v0.1.9/git-age_Darwin_x86_64.tar.gz"
-      sha256 "e74f06438ed523ca27b49d0d3714cb1845e7aaee2f4091ddd3cd0d415a36392f"
+    if Hardware::CPU.arm?
+      url "https://github.com/prskr/git-age/releases/download/v0.1.10/git-age_Darwin_arm64.tar.gz"
+      sha256 "bc15bf2fa60a796a04db71d719fd73be304929277490ce99cacd47ad81a07b00"
 
       def install
         bin.install "git-age"
         man1.install "docs/git-age.1.gz"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/prskr/git-age/releases/download/v0.1.9/git-age_Darwin_arm64.tar.gz"
-      sha256 "99bbcda16f67e7f96073b41ca7556cd6c7b53a48e2c4ffb491b9970e573aada8"
+    if Hardware::CPU.intel?
+      url "https://github.com/prskr/git-age/releases/download/v0.1.10/git-age_Darwin_x86_64.tar.gz"
+      sha256 "72d37112e8079b42d62b193ebabac3733fe8e75f26302ecb720575543b521027"
 
       def install
         bin.install "git-age"
@@ -33,8 +33,8 @@ class GitAge < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/prskr/git-age/releases/download/v0.1.9/git-age_Linux_arm64.tar.gz"
-      sha256 "a21cdd5c794c5af9ac1c0fa848495fb9fe9bc8a6d1cf30f8c6e76f86b10bce2b"
+      url "https://github.com/prskr/git-age/releases/download/v0.1.10/git-age_Linux_arm64.tar.gz"
+      sha256 "1cc9685ab6c75accf35a665595e117f1004282d6aea54f202fe3c8a425ea7d07"
 
       def install
         bin.install "git-age"
@@ -42,8 +42,8 @@ class GitAge < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/prskr/git-age/releases/download/v0.1.9/git-age_Linux_x86_64.tar.gz"
-      sha256 "2ea58c4238c37d869fb5e844db67474d7a7f117277853bdb773f44ad23c60469"
+      url "https://github.com/prskr/git-age/releases/download/v0.1.10/git-age_Linux_x86_64.tar.gz"
+      sha256 "ca65bf15a85a8731458c019f993963c4113b2ed4c9c9da038ed28edcb788efb7"
 
       def install
         bin.install "git-age"
