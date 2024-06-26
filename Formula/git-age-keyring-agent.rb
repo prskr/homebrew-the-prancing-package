@@ -6,21 +6,21 @@ class GitAgeKeyringAgent < Formula
   desc "git-age agent to store and load identities from your OS' keyring
 "
   homepage "https://github.com/prskr/git-age-keyring-agent"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/prskr/git-age-keyring-agent/releases/download/v0.1.0/git-age-keyring-agent_Darwin_x86_64.tar.gz"
-      sha256 "a7e9d3e3ce5b0e808a53205614951532222d0626f5ed2e11994cd72b4862ac10"
+      url "https://github.com/prskr/git-age-keyring-agent/releases/download/v0.1.1/git-age-keyring-agent_Darwin_x86_64.tar.gz"
+      sha256 "8485282e7553beee3859e22a62a1950542fe71c4313f108df27ed8f4c471e399"
 
       def install
         bin.install "git-age-keyring-agent"
       end
     end
     on_arm do
-      url "https://github.com/prskr/git-age-keyring-agent/releases/download/v0.1.0/git-age-keyring-agent_Darwin_arm64.tar.gz"
-      sha256 "32e1bfe6dd0bdc5bd2309583b0e011085fab728967123763e3d5f4e16309da56"
+      url "https://github.com/prskr/git-age-keyring-agent/releases/download/v0.1.1/git-age-keyring-agent_Darwin_arm64.tar.gz"
+      sha256 "d582ce81148f67c80f128f719977b7c789616d175a364c82d6546f57894cf708"
 
       def install
         bin.install "git-age-keyring-agent"
@@ -31,8 +31,8 @@ class GitAgeKeyringAgent < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/prskr/git-age-keyring-agent/releases/download/v0.1.0/git-age-keyring-agent_Linux_x86_64.tar.gz"
-        sha256 "f642fcb73b2923e8563ada716480740c7df997311c6014b403208200311ad286"
+        url "https://github.com/prskr/git-age-keyring-agent/releases/download/v0.1.1/git-age-keyring-agent_Linux_x86_64.tar.gz"
+        sha256 "ce538dc95093c424315741fdf2efb7d307babd7686563488e671f91e3016f0fb"
 
         def install
           bin.install "git-age-keyring-agent"
@@ -41,8 +41,8 @@ class GitAgeKeyringAgent < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/prskr/git-age-keyring-agent/releases/download/v0.1.0/git-age-keyring-agent_Linux_arm64.tar.gz"
-        sha256 "fbf74fed9e5495edfab652a3ad4e12974037962fb0a19d5181b8ed7f6357e810"
+        url "https://github.com/prskr/git-age-keyring-agent/releases/download/v0.1.1/git-age-keyring-agent_Linux_arm64.tar.gz"
+        sha256 "ea8e1372087f0ae844643e84a6afd5894b94c10a7b8b80e6e4d41b7a0c7eb973"
 
         def install
           bin.install "git-age-keyring-agent"
