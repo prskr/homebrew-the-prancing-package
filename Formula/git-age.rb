@@ -13,7 +13,7 @@ class GitAge < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/prskr/git-age/releases/download/v0.2.4/git-age_Darwin_x86_64.tar.gz"
-      sha256 "7ce0434cd3e2106b2fba054c5fa8bf3a5b3cfca19c3158cef9f021c1d441baa8"
+      sha256 "506c74a006e475c42ab6066697817e1a6d027c4e67a5781cde4dff39af3f2229"
 
       def install
         bin.install "git-age"
@@ -22,7 +22,7 @@ class GitAge < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/prskr/git-age/releases/download/v0.2.4/git-age_Darwin_arm64.tar.gz"
-      sha256 "53a84736f0703ff36facc58dff95541cbc66aa16af8e9a435eb1dde568277555"
+      sha256 "47155c59f48fd467d4e268abd9c52ac09c2efed2e8b3ee9cb519b0e4c0103704"
 
       def install
         bin.install "git-age"
@@ -35,7 +35,7 @@ class GitAge < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/prskr/git-age/releases/download/v0.2.4/git-age_Linux_x86_64.tar.gz"
-        sha256 "43597516f7b6231d69adae371b849f6b551528d398a38e349197bc984ea3f88a"
+        sha256 "c96554b08656bde067905b69573d15d881a41a8ee7489b86c5aa90a9715899c4"
 
         def install
           bin.install "git-age"
@@ -46,7 +46,7 @@ class GitAge < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/prskr/git-age/releases/download/v0.2.4/git-age_Linux_arm64.tar.gz"
-        sha256 "97b936165d31362575c7db80308f94cd54b9966e3761bfcd8b38192f778a0d9a"
+        sha256 "8de105a0a6efb056e209c52dae1644e4902c95a35a40180b0d51262209cafc05"
 
         def install
           bin.install "git-age"
